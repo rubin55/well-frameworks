@@ -54,11 +54,11 @@ table below.
 So which ones to start with? Let's see:
 
 
-| Language     | Framework used | Dependencies    | Subdirectory     |
-| ------------ |--------------- | --------------- | ---------------- |
-| Java         | None           | n/a             | /java-none       |
-| Java         | Bootique       | n/a             | /java-bootique   |
-| Java         | Spring Boot    | n/a             | /java-springboot |
+| Language     | Framework used | Dependencies    | Subdirectory     | Done |
+| ------------ |--------------- | --------------- | ---------------- |:----:|
+| Java         | None           | n/a             | /java-none       |  ✗  :|
+| Java         | Bootique       | n/a             | /java-bootique   |  ✗  :|
+| Java         | Spring Boot    | n/a             | /java-springboot |  ✗  :|
 
 ## Results
 
