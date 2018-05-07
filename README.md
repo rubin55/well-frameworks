@@ -21,16 +21,16 @@ language to implement the the functional specification defined below.
 
 So what will we build? Let's describe that in one paragraph:
 
-*We'll build a self-contained executable that runs a HTTP server which serves
+*We'll build a self-contained executable that runs an HTTPS server which serves
 a basic-auth supporting REST interface which implements GET and POST for the
 retrieval and modification of a list of humans, which are persisted in some
 way or the other.*
 
 So basically, we want to be able to:
 
- * `GET http://localhost:8080/humans` (returns a list of humans)
- * `GET http://localhost:8080/humans/rubin` (returns a specific human)
- * `POST http://localhost:8080/humans/freek` (modify or create a human)
+ * `GET https://localhost:8080/humans` (returns a list of humans)
+ * `GET https://localhost:8080/humans/rubin` (returns a specific human)
+ * `POST https://localhost:8080/humans/freek` (modify or create a human)
 
 The implementer (now just [me](https://github.com/rubin55/) but mayhaps more
 contributors some day?) creates a directory within this project with a
