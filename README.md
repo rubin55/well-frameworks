@@ -32,18 +32,19 @@ So basically, we want to be able to:
  * `GET http://localhost:8080/humans/rubin` (returns a specific human)
  * `POST http://localhost:8080/humans/freek` (modify or create a human)
 
-The implementer (now just [me](/rubin55) but maybe more contributors some day?)
-creates a directory within this project with a descriptive name. This directory
-should contain a README.md which describes the framework used, the
-implementation and contains the build instructions to create the artifact (an
-executable file or archive of some sort which is directly runnable).
+The implementer (now just [me](https://github.com/rubin55/) but mayhaps more
+contributors some day?) creates a directory within this project with a
+descriptive name. This directory should contain a README.md which describes
+the framework used, the implementation and contains the build instructions to
+create the artifact (an executable file or archive of some sort which is
+directly runnable).
 
-Note 1:  It's considered ok to install a runtime, like Python or Java to run the
+**Note 1:**  It's considered ok to install a runtime, like Python or Java to run the
 code but not to install any dependencies like libraries or databases by hand -
 the application should be as self-contained as possible. If a given
 implementation produces a real executable binary, that's bonus points :-).
 
-Note 2: It's also considered ok to use a library that does some basic thing,
+**Note 2:** It's also considered ok to use a library that does some basic thing,
 like HTTP serving or event processing. When I use something (outside of the
 framework or standard library), I'll mention the primary dependencies in the
 table below.
