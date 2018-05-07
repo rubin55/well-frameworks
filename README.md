@@ -1,2 +1,54 @@
-# well-frameworks
-A functional comparison of various application frameworks
+# Well, frameworks..
+
+This project aims to be a functional comparison of various application
+frameworks. In the subdirectories you'll find ready-to-build implementations
+of the functional specification defined below.
+
+The idea is to compare non-functional properties of these frameworks, things
+like executable size (due to framework scope or transient dependencies for
+example), system resource usage, conceptual complexity, and probably a few
+other things I can come up with.
+
+Next to a few well-known frameworks, I will opt to code "sans-framework" in
+at least a few languages. The goal of that is to actually get a feel of what
+it means to do it yourself as opposed to letting a framework do the heavy-
+lifting for you (how heavy is that lifting anyway).
+
+In short, the goal is to use the framework or the standard library of a given
+language to implement the the functional specification defined below.
+
+## Functional specification
+
+So what will we build? Let's describe that in one paragraph:
+
+*We'll build a self-contained executable that runs a HTTP server which serves
+a basic-auth supporting REST interface which implements GET and POST for the
+retrieval and modification of a list of humans, which are persisted in some
+way or the other.*
+
+So basically, we want to be able to:
+
+ * `GET http://localhost:8080/humans` (returns a list of humans)
+ * `GET http://localhost:8080/humans/rubin` (returns a specific human)
+ * `POST http://localhost:8080/humans/freek` (modify or create a human)
+
+The implementer (now just [me](/rubin55) but maybe more contributors some day?)
+creates a directory within this project with a descriptive name. This directory
+should contain a README.md which describes the framework used, the
+implementation and contains the build instructions to create the artifact (an
+executable file or archive of some sort which is directly runnable).
+
+## Frameworks and implementations
+
+So which ones to start with? Let's see:
+
+
+| Language     | Framework used | Subdirectory     |
+| ------------ |--------------- | ---------------- |
+| Java         | None           | /java-none       |
+| Java         | Bootique       | /java-bootique   |
+| Java         | Spring Boot    | /java-springboot |
+
+## Results
+
+Nothing to see here yet, move along..
