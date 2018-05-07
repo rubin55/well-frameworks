@@ -36,22 +36,28 @@ The implementer (now just [me](/rubin55) but maybe more contributors some day?)
 creates a directory within this project with a descriptive name. This directory
 should contain a README.md which describes the framework used, the
 implementation and contains the build instructions to create the artifact (an
-executable file or archive of some sort which is directly runnable). Note that
-it is considered ok to install a runtime, like Python or Java to run the code
-but not to install any dependencies like libraries or databases by hand - the
-application should be as self-contained as possible. If a given implementation
-produces a real executable binary, that's bonus points :-).
+executable file or archive of some sort which is directly runnable).
+
+Note 1:  It's considered ok to install a runtime, like Python or Java to run the
+code but not to install any dependencies like libraries or databases by hand -
+the application should be as self-contained as possible. If a given
+implementation produces a real executable binary, that's bonus points :-).
+
+Note 2: It's also considered ok to use a library that does some basic thing,
+like HTTP serving or event processing. When I use something (outside of the
+framework or standard library), I'll mention the primary dependencies in the
+table below.
 
 ## Frameworks and implementations
 
 So which ones to start with? Let's see:
 
 
-| Language     | Framework used | Subdirectory     |
-| ------------ |--------------- | ---------------- |
-| Java         | None           | /java-none       |
-| Java         | Bootique       | /java-bootique   |
-| Java         | Spring Boot    | /java-springboot |
+| Language     | Framework used | Dependencies    | Subdirectory     |
+| ------------ |--------------- | --------------- | ---------------- |
+| Java         | None           | n/a             | /java-none       |
+| Java         | Bootique       | n/a             | /java-bootique   |
+| Java         | Spring Boot    | n/a             | /java-springboot |
 
 ## Results
 
