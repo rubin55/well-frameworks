@@ -11,8 +11,8 @@ other things I can come up with.
 
 Next to a few well-known frameworks, I will opt to code "sans-framework" in
 at least a few languages. The goal of that is to actually get a feel of what
-it means to do it yourself as opposed to letting a framework do the heavy-
-lifting for you (how heavy is that lifting anyway).
+it means to do it yourself as opposed to letting a framework do the
+heavy-lifting for you (how heavy is that lifting anyway).
 
 In short, the goal is to use the framework or the standard library of a given
 language to implement the the functional specification defined below.
@@ -36,7 +36,11 @@ The implementer (now just [me](/rubin55) but maybe more contributors some day?)
 creates a directory within this project with a descriptive name. This directory
 should contain a README.md which describes the framework used, the
 implementation and contains the build instructions to create the artifact (an
-executable file or archive of some sort which is directly runnable).
+executable file or archive of some sort which is directly runnable). Note that
+it is considered ok to install a runtime, like Python or Java to run the code
+but not to install any dependencies like libraries or databases by hand - the
+application should be as self-contained as possible. If a given implementation
+produces a real executable binary, that's bonus points :-).
 
 ## Frameworks and implementations
 
