@@ -17,6 +17,7 @@ heavy-lifting for you (how heavy is that lifting anyway).
 In short, the goal is to use the framework or the standard library of a given
 language to implement the the functional specification defined below.
 
+
 ## Functional specification
 
 So what will we build? Let's describe that in one paragraph:
@@ -39,15 +40,16 @@ the framework used, the implementation and contains the build instructions to
 create the artifact (an executable file or archive of some sort which is
 directly runnable).
 
-**Note 1:**  It's considered ok to install a runtime, like Python or Java to run the
-code but not to install any dependencies like libraries or databases by hand -
-the application should be as self-contained as possible. If a given
+**Note 1:**  It's considered ok to install a runtime, like Python or Java to
+run the code but not to install any dependencies like libraries or databases by
+hand - the application should be as self-contained as possible. If a given
 implementation produces a real executable binary, that's bonus points :-).
 
 **Note 2:** It's also considered ok to use a library that does some basic thing,
 like HTTP serving or event processing. When I use something (outside of the
 framework or standard library), I'll mention the primary dependencies in the
 table below.
+
 
 ## Frameworks and implementations
 
