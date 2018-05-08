@@ -8,22 +8,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HumanController {
 
 
     HumanRepository repository;
 
-    public HelloController(HumanRepository repository) {
+    public HumanController(HumanRepository repository) {
         this.repository = repository;
     }
 
 
-    @GetMapping("/")
+    @GetMapping(value="/", produces="application/json")
     public String index() {
         return "Greetings from Spring Boot!";
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/humans")
     public String helloAll() {
 
         final Set<String> msgs = new HashSet<>();
@@ -36,7 +36,7 @@ public class HelloController {
     }
 
 
-    @GetMapping("/hello/{alias}")
+    @GetMapping("/humans/{alias}")
     public String helloHuman(@PathVariable String alias) {
 
         final Set<String> msgs = new HashSet<>();

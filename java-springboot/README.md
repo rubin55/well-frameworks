@@ -6,9 +6,9 @@ To create the keystore.p12, in the java-springboot directory, execute the follow
 
 To access the application:
 
-`GET https://localhost:8443/hello`
+`GET https://localhost:8443/humans`
 
-`GET https://localhost:8443/hello/rubin`
+`GET https://localhost:8443/humans/rubin`
 
 
 ## Todo
