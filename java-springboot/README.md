@@ -9,3 +9,9 @@ To access the application:
 `GET https://localhost:8443/hello`
 
 `GET https://localhost:8443/hello/rubin`
+
+
+## Todo
+
+ * Basic auth
+ * Post method
